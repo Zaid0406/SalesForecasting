@@ -122,20 +122,20 @@ elif page=="Forecast Explorer":
 
     forecast_type = st.selectbox(
         "Forecast Type",
-        ["Category", "Region"]
+        ["Category", "Region"],
         key="forecast_type"
     )
     
     if forecast_type == "Category":
         option = st.selectbox(
         "Select Category",
-        ["Furniture", "Technology", "Office Supplies"]
+        ["Furniture", "Technology", "Office Supplies"],
         key="forecast_category"
         )
     else:
         option = st.selectbox(
         "Select Region",
-        ["West", "East"]
+        ["West", "East"],
         key="forecast_region"
         )
 
