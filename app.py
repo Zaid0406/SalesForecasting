@@ -16,7 +16,8 @@ page = st.sidebar.selectbox(
         "Forecast Explorer",
         "Anomaly Report",
         "Demand Segments"
-    ]
+    ],
+    key="page_selector"
 )
 
 train = pd.read_csv("train.csv")
@@ -73,6 +74,7 @@ if page=="Sales Overview":
     selected_region = st.selectbox(
         "Select Region",
         sorted(train["Region"].unique())
+        key="region"
     )
 
     selected_category = st.selectbox(
@@ -119,19 +121,22 @@ elif page=="Forecast Explorer":
     st.header("Forecast Explorer")
 
     forecast_type = st.selectbox(
-    "Forecast Type",
-    ["Category", "Region"]
+        "Forecast Type",
+        ["Category", "Region"]
+        key="forecast_type"
     )
     
     if forecast_type == "Category":
         option = st.selectbox(
         "Select Category",
         ["Furniture", "Technology", "Office Supplies"]
+        key="forecast_category"
         )
     else:
         option = st.selectbox(
         "Select Region",
         ["West", "East"]
+        key="forecast_region"
         )
 
     months=st.slider(
