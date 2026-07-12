@@ -63,6 +63,7 @@ if page=="Sales Overview":
     plt.xticks(rotation=90)
 
     st.pyplot(fig)
+    plt.close(fig)
 
     # ==============================
     # Sales by Region and Category
@@ -205,7 +206,10 @@ elif page=="Anomaly Report":
 
     st.header("Anomaly Detection")
 
-    st.image("charts/isolation_forest_anomalies.png")
+    st.image(
+        "charts/isolation_forest_anomalies.png",
+        use_container_width=True
+    )
 
     anomaly_dates=[
 
@@ -254,7 +258,10 @@ else:
 
     st.header("Demand Segmentation")
 
-    st.image("charts/kmeans_clusters.png")
+    st.image(
+        "charts/kmeans_clusters.png",
+        use_container_width=True
+    )
 
     clusters=pd.DataFrame({
 
