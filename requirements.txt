@@ -4,3 +4,9 @@ numpy
 matplotlib
 plotly
 openpyxl
+streamlit
+pandas
+numpy
+matplotlib
+plotly
+openpyxl
