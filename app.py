@@ -73,7 +73,7 @@ if page=="Sales Overview":
 
     selected_region = st.selectbox(
         "Select Region",
-        sorted(train["Region"].unique())
+        sorted(train["Region"].unique()),
         key="region"
     )
 
