@@ -72,6 +72,25 @@ streamlit run app.py
 
 ---
 
+
+## Live Streamlit Application
+
+https://salesforecasting-dnndugt9bvc7u4rklvuuzd.streamlit.app/
+
+---
+
+## Google Colab Notebook
+
+https://colab.research.google.com/github/Zaid0406/SalesForecasting/blob/main/analysis.ipynb
+
+---
+
+## GitHub Repository
+
+https://github.com/Zaid0406/SalesForecasting
+
+---
+
 ## Dashboard Pages
 
 - Sales Overview
